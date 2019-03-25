@@ -1,7 +1,7 @@
-#RES - Exercice Calculator
+# RES - Exercice Calculator
 Guillaume Laubscher et Alison Savary
 
-##Protocol
+## Protocol
 ### What transport protocol do we use?
 We will use TCP.
 
