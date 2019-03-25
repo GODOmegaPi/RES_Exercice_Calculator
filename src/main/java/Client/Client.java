@@ -11,20 +11,34 @@ public class Client {
     private BufferedReader in;
 
     public void startConnection(String ip, int port) {
-        clientSocket = new Socket(ip, port);
-        out = new PrintWriter(clientSocket.getOutputStream(), true);
-        in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        try {
+            clientSocket = new Socket(ip, port);
+            out = new PrintWriter(clientSocket.getOutputStream(), true);
+            in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public String sendMessage(String msg) {
-        out.println(msg);
-        String resp = in.readLine();
-        return resp;
+        try {
+            out.println(msg);
+            String resp = in.readLine();
+
+            return resp;
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public void stopConnection() {
-        in.close();
-        out.close();
-        clientSocket.close();
+        try {
+            in.close();
+            out.close();
+            clientSocket.close();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

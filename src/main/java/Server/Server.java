@@ -13,24 +13,31 @@ public class Server {
     private BufferedReader in;
 
     public void start(int port) {
-        serverSocket = new ServerSocket(port);
-        clientSocket = serverSocket.accept();
-        out = new PrintWriter(clientSocket.getOutputStream(), true);
-        in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        String greeting = in.readLine();
-        if ("hello server".equals(greeting)) {
-            out.println("hello client");
-        }
-        else {
-            out.println("unrecognised greeting");
+        try {
+            serverSocket = new ServerSocket(port);
+            clientSocket = serverSocket.accept();
+            out = new PrintWriter(clientSocket.getOutputStream(), true);
+            in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            String greeting = in.readLine();
+            if ("hello server".equals(greeting)) {
+                out.println("hello client");
+            } else {
+                out.println("unrecognised greeting");
+            }
+        } catch (Exception e){
+            e.printStackTrace();
         }
     }
 
     public void stop() {
-        in.close();
-        out.close();
-        clientSocket.close();
-        serverSocket.close();
+        try {
+            in.close();
+            out.close();
+            clientSocket.close();
+            serverSocket.close();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
     public static void main(String[] args) {
         Server server = new Server();
