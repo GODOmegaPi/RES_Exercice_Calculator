@@ -32,24 +32,23 @@ public class Server {
 
             try {
                 obj = new JSONObject(json);
-                String calcul = obj.getString("Calcul");
+                String calcul = obj.getString("Calculation");
 
+                // auto eval of a string to a math function using javascript
                 ScriptEngineManager manager = new ScriptEngineManager();
                 ScriptEngine engine = manager.getEngineByName("js");
                 Object result = engine.eval(calcul);
-
-                System.out.println(result.toString());
 
                 obj.put("Error", "");
                 obj.put("Result", result.toString());
             } catch (JSONException e){
                 obj = new JSONObject();
-                obj.put("Calcul", json);
+                obj.put("Calculation", json);
                 obj.put("Error", e.toString());
                 obj.put("Result", "");
             } catch (ScriptException e){
                 obj = new JSONObject();
-                obj.put("Calcul", json);
+                obj.put("Calculation", json);
                 obj.put("Error", e.toString());
                 obj.put("Result", "");
             }
