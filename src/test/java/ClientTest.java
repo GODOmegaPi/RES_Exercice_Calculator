@@ -8,7 +8,7 @@ public class ClientTest {
     public void givenClient_whenServerRespondsWhenStarted_thenCorrect() {
         Client client = new Client();
         client.startConnection("127.0.0.1", 6666);
-        String response = client.sendMessage("hello server");
-        assertEquals("hello client", response);
+        String response = client.sendMessage("{\"Calcul\": \"Math.pow(2,4) % 7\" }");
+        assertEquals("{\"Calcul\":\"Math.pow(2,4) % 7\",\"Error\":\"\",\"Result\":\"2.0\"}", response);
     }
 }
