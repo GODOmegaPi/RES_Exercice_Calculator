@@ -1,9 +1,11 @@
 package Server;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -26,18 +28,31 @@ public class Server {
             in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
             String json = in.readLine();
+            JSONObject obj;
 
-            JSONObject obj = new JSONObject(json);
-            String calcul = obj.getString("Calcul");
+            try {
+                obj = new JSONObject(json);
+                String calcul = obj.getString("Calcul");
 
-            ScriptEngineManager manager = new ScriptEngineManager();
-            ScriptEngine engine = manager.getEngineByName("js");
-            Object result = engine.eval(calcul);
+                ScriptEngineManager manager = new ScriptEngineManager();
+                ScriptEngine engine = manager.getEngineByName("js");
+                Object result = engine.eval(calcul);
 
-            System.out.println(result.toString());
+                System.out.println(result.toString());
 
-            obj.put("Error", "");
-            obj.put("Result", result.toString());
+                obj.put("Error", "");
+                obj.put("Result", result.toString());
+            } catch (JSONException e){
+                obj = new JSONObject();
+                obj.put("Calcul", json);
+                obj.put("Error", e.toString());
+                obj.put("Result", "");
+            } catch (ScriptException e){
+                obj = new JSONObject();
+                obj.put("Calcul", json);
+                obj.put("Error", e.toString());
+                obj.put("Result", "");
+            }
 
             out.println(obj.toString());
 
