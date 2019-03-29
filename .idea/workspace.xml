@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f4fb4f6-e8d6-460e-879d-a5e4e16c0941" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClientTest.java" afterDir="false" />
     </list>
@@ -21,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="396">
               <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -33,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="195">
+              <caret line="64" column="179" selection-start-line="64" selection-start-column="179" selection-end-line="64" selection-end-column="179" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,8 +46,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="36" column="76" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
+            <state relative-caret-position="187">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Server/MultiThreadedServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-12">
+              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#1288#1289#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Server/WorkerRunnable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +99,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Client/Client.java" />
         <option value="$PROJECT_DIR$/src/test/java/Client/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Server/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Server/MultiThreadedServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Server/WorkerRunnable.java" />
         <option value="$PROJECT_DIR$/src/test/java/ClientTest.java" />
       </list>
     </option>
@@ -95,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +186,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,7 +193,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553682921117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553854511477" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../json-20180813.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -192,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClientTest">
+  <component name="RunManager" selected="JUnit.ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong">
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Server.Server" />
       <module name="RES_Exercice_Calculator" />
@@ -206,21 +233,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RES_Exercice_Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Client" />
-      <option name="MAIN_CLASS_NAME" value="Client.Client" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RES_Exercice_Calculator" />
       <option name="PACKAGE_NAME" value="" />
@@ -230,11 +242,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClientTest.fiveClientsShouldReceivesTheSameCorrectJSONWhenAskingTheServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RES_Exercice_Calculator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClientTest" />
+      <option name="METHOD_NAME" value="fiveClientsShouldReceivesTheSameCorrectJSONWhenAskingTheServer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RES_Exercice_Calculator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClientTest" />
+      <option name="METHOD_NAME" value="oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RES_Exercice_Calculator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClientTest" />
+      <option name="METHOD_NAME" value="oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClientTest" />
+        <item itemvalue="JUnit.ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" />
+        <item itemvalue="JUnit.ClientTest.oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="JUnit.Client" />
+        <item itemvalue="JUnit.ClientTest.fiveClientsShouldReceivesTheSameCorrectJSONWhenAskingTheServer" />
+        <item itemvalue="JUnit.ClientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -252,42 +296,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClientTest - 2019.03.27 at 09h 41m 13s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong - 2019.03.29 at 11h 08m 33s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 09h 41m 43s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong - 2019.03.29 at 11h 09m 16s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 20m 44s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong - 2019.03.29 at 11h 09m 57s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 21m 15s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong - 2019.03.29 at 11h 10m 17s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 24m 13s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_fiveClientsShouldReceivesTheSameCorrectJSONWhenAskingTheServer - 2019.03.29 at 11h 10m 59s.xml">
+      <configuration name="ClientTest.fiveClientsShouldReceivesTheSameCorrectJSONWhenAskingTheServer" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 27m 02s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong - 2019.03.29 at 11h 11m 33s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 33m 17s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong - 2019.03.29 at 11h 11m 49s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 33m 45s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong - 2019.03.29 at 11h 13m 55s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 35m 11s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong - 2019.03.29 at 11h 14m 44s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheJSONSentIsWrong" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClientTest - 2019.03.27 at 11h 35m 18s.xml">
-      <configuration name="ClientTest" configurationId="JUnit" />
+    <history-entry file="ClientTest_oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong - 2019.03.29 at 11h 14m 50s.xml">
+      <configuration name="ClientTest.oneClientShouldReceiveAnErrorMessageIfTheCalculationSentIsWrong" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13086233" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1323752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -329,9 +373,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Server/Server.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Server/MultiThreadedServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Server/WorkerRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="396">
           <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -341,18 +408,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="36" column="76" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="195">
+          <caret line="64" column="179" selection-start-line="64" selection-start-column="179" selection-end-line="64" selection-end-column="179" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
