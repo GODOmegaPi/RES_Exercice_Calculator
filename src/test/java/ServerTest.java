@@ -54,7 +54,7 @@ public class ServerTest {
         Client client = new Client();
         client.startConnection("127.0.0.1", 6666);
         String response = client.sendMessage("{\"Calculation\": \"Math.pow(2,4) % 7\" ");
-        assertEquals("{\"Error\":\"The JSON is not well formated or is missing some informations!\",\"JSON\":\"{\\\"Calculation\\\": \\\"Math.pow(2,4) % 7\\\" \",\"Result\":\"\"}", response);
+        assertEquals("{\"Error\":\"The JSON is not well formated or is missing some informations!\",\"Calculation\":\"\",\"Result\":\"\"}", response);
     }
 
     @Test
@@ -62,6 +62,6 @@ public class ServerTest {
         Client client = new Client();
         client.startConnection("127.0.0.1", 6666);
         String response = client.sendMessage("{\"Calculation\": \"Math.pow(2 4) % 7\" }");
-        assertEquals("{\"Error\":\"The JSON is not well formated or is missing some informations!\",\"JSON\":\"{\\\"Calculation\\\": \\\"Math.pow(2 4) % 7\\\" }\",\"Result\":\"\"}", response);
+        assertEquals("{\"Error\":\"The JSON use fonctions that are not part of JavaScript!\",\"Calculation\":\"\",\"Result\":\"\"}", response);
     }
 }

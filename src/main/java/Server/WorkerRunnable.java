@@ -42,13 +42,13 @@ public class WorkerRunnable implements Runnable {
                 obj.put("Result", result.toString());
             } catch (JSONException e){
                 obj = new JSONObject();
-                obj.put("JSON", json);
+                obj.put("Calculation", "");
                 obj.put("Error", "The JSON is not well formated or is missing some informations!");
                 obj.put("Result", "");
             } catch (ScriptException e){
                 obj = new JSONObject();
-                obj.put("JSON", json);
-                obj.put("Error", "The JSON is not well formated or is missing some informations!");
+                obj.put("Calculation", "");
+                obj.put("Error", "The JSON use fonctions that are not part of JavaScript!");
                 obj.put("Result", "");
             }
 
